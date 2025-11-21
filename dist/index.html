@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Shymkent Travel Assistant - Your guide to Shymkent city" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <!-- Leaflet CSS is imported by the app (PostCSS/Tailwind build). Removed external CDN link to avoid tracking/prevention issues -->
+    <title>Shymkent Travel Assistant</title>
+    <script type="module" crossorigin src="/assets/index-d48c2b93.js"></script>
+    <link rel="stylesheet" href="/assets/index-ab2ede97.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <script>
+      // Dev helper: attempt to unregister any service workers and clear caches on localhost.
+      (function() {
+        try {
+          const hostname = location.hostname;
+          if (hostname === 'localhost' || hostname === '127.0.0.1') {
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.getRegistrations().then((regs) => {
+                regs.forEach(r => {
+                  try { r.unregister(); } catch (e) { /* ignore */ }
+                });
+              }).catch(() => {});
+            }
+            if (window.caches && window.caches.keys) {
+              caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))).catch(()=>{});
+            }
+          }
+        } catch (e) {
+          // swallow errors — this is a best-effort helper
+          console.warn('SW cleanup helper failed', e);
+        }
+      })();
+    </script>
+  </body>
+</html>

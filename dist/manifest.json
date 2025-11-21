@@ -1,0 +1,59 @@
+{
+  "name": "Shymkent Travel Assistant",
+  "short_name": "ShymkentTravel",
+  "description": "Travel assistant for Shymkent city - your digital guide to tourist places, safety, and navigation",
+  "lang": "en",
+  "dir": "ltr",
+  "theme_color": "#10B981",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "categories": ["travel", "navigation", "tourist"],
+  "screenshots": [
+    {
+      "src": "/screenshots/screenshot1.png",
+      "sizes": "640x320",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/screenshot2.png",
+      "sizes": "320x480",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Map",
+      "short_name": "Map",
+      "description": "Open interactive map",
+      "url": "/map",
+        "icons": [ { "src": "/icons/icon.svg", "sizes": "any" } ]
+    },
+    {
+      "name": "AI Assistant",
+      "short_name": "Assistant",
+      "description": "Chat with AI assistant",
+      "url": "/assistant",
+        "icons": [ { "src": "/icons/icon.svg", "sizes": "any" } ]
+    },
+    {
+      "name": "Emergency",
+      "short_name": "SOS",
+      "description": "Emergency SOS button",
+      "url": "/safety",
+        "icons": [ { "src": "/icons/icon.svg", "sizes": "any" } ]
+    }
+  ]
+}
